@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Challenge your friends with this interactive Tic Tac Toe game. Track scores and enjoy stunning animations.">
+  <meta name="keywords" content="Tic Tac Toe, Online Game, Interactive, Multiplayer, Fun Game, Classic Game, Tic Tac Toe Game">
+  <meta name="author" content="Abdullah Bin Zubair Hashmi">
+
+ 
+  <meta property="og:title" content="Play Tic Tac Toe Online - Interactive Game">
+  <meta property="og:description" content="Challenge your friends with this fun, interactive Tic Tac Toe game. Track scores and enjoy stunning animations.">
+  <meta property="og:image" content="https://yourwebsite.com/path/to/your-image.png"> 
+  <meta property="og:url" content="https://abdullahhashmi663.github.io/Tic-Toc/"> 
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Play Tic Tac Toe Online - Interactive Game">
+  <meta name="twitter:description" content="Challenge your friends with this fun, interactive Tic Tac Toe game. Track scores and enjoy stunning animations.">
+  <meta name="twitter:image" content="https://yourwebsite.com/path/to/your-image.png"> 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Game",
+    "name": "Tic Tac Toe",
+    "description": "Challenge your friends with this interactive Tic Tac Toe game. Track scores and enjoy stunning animations.",
+    "url": "https://abdullahhashmi663.github.io/Tic-Toc/",
+    "image": "./Tic-toc.png"
+  }
+  </script>
+
+  
+  <title>Play Tic Tac Toe Online - Interactive Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 id="turn-display">Player X's Turn</h2>
+   
+  <div id="scoreboard">
+    <span id="score-x">Player 'X': <strong>0</strong> </span>
+    ||
+    <span id="score-o" style="color: #1eda37;">Player 'O' : <strong>0</strong></span>
+  </div>
+
+  <div class="game-container">
+    <div id="cell-0" class="cell" onclick="makeMove(0)"></div>
+    <div id="cell-1" class="cell" onclick="makeMove(1)"></div>
+    <div id="cell-2" class="cell" onclick="makeMove(2)"></div>
+    <div id="cell-3" class="cell" onclick="makeMove(3)"></div>
+    <div id="cell-4" class="cell" onclick="makeMove(4)"></div>
+    <div id="cell-5" class="cell" onclick="makeMove(5)"></div>
+    <div id="cell-6" class="cell" onclick="makeMove(6)"></div>
+    <div id="cell-7" class="cell" onclick="makeMove(7)"></div>
+    <div id="cell-8" class="cell" onclick="makeMove(8)"></div>
+  </div>
+
+\
+  <div id="winning-message" class="winning-message">
+    <span id="result"></span>
+    <button onclick="closeAlert()">OK</button>
+  </div>
+
+  <div id="buttons">
+    <button onclick="nextMatch()">Next Match</button>
+    <button onclick="resetGame()">Reset Game</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
